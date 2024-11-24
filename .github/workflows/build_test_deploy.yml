@@ -23,10 +23,10 @@ jobs:
               with:
                   submodules: 'recursive'
             - name: Setup pnpm
-              uses: pnpm/action-setup@v2
+              uses: pnpm/action-setup@v4
               with:
           # choose pnpm version to use
-                version: lts
+                version: latest
           # install deps with pnpm
                 run_install: true
             - name: Setup Node
@@ -60,10 +60,10 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v4
             - name: Setup pnpm
-              uses: pnpm/action-setup@v2
+              uses: pnpm/action-setup@v4
               with:
           # choose pnpm version to use
-                version: lts
+                version: latest
           # install deps with pnpm
                 run_install: true
             - name: Setup Node
