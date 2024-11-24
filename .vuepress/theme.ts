@@ -64,7 +64,7 @@ export default hopeTheme(
         },
 
 
-
+// fullscreen: true,
 
     encrypt: {
       config: {
@@ -100,6 +100,9 @@ export default hopeTheme(
 
       components: {
         components: ["Badge", "VPCard"],
+        },
+        searchPro: {
+          autoSuggestions: false
       },
 
       markdownImage: {
@@ -111,8 +114,6 @@ export default hopeTheme(
       // install katex or before enabling it
       markdownMath: {
           type: "mathjax", // or "mathjax"
-        //   mhchem: true,
-        //   copy: true
       },
 
         markdownTab: true,

@@ -5,7 +5,7 @@ import UnoCSS from 'unocss/vite'
 
 import theme from "./theme.js";
 import { comment } from "vuepress-theme-hope";
-
+import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
@@ -26,7 +26,9 @@ export default defineUserConfig({
     //     },
   }),
 
-  theme,
+    theme,
+
+    plugins: [removeHtmlExtensionPlugin()],
 
   // enable it with pwa
   // shouldPrefetch: false,
