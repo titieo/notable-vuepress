@@ -1,17 +1,20 @@
-# online-demo
-
-[Fork on StackBlitz ⚡️](https://stackblitz.com/fork/vuepress-theme-hope)
-
-## ⚠️⚠️⚠️This demo can not run on stackblitz now, because the Sass codes in Vite are using APIs that is not supported by stackblitz core.
-
-## To run the project, you should clone it and run in a local env!
-
-## Docs Demo
-
-- Preview: `pnpm run docs:dev`
-- Build: `pnpm run docs:build`
-
-## Blog Demo
-
-- Preview: `pnpm run blog:dev`
-- Build: `pnpm run blog:build`
+---
+home: true
+layout: BlogHome
+icon: home
+title: Notable
+# heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+bgImage: /bg.png
+# bgImageStyle: 'background-position-y: bottom'
+heroText: Notable
+tagline: Rule your mind or it will rule you
+heroImageStyle: 'opacity:70'
+# bgImageStyle: 'display:none'
+# heroFullScreen: true
+# projects:
+#   - icon: project
+#     name: project name
+#     desc: project detailed description
+#     link: https://your.project.link
+# footer: customize your footer text
+---
