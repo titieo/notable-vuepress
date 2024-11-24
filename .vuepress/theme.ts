@@ -30,7 +30,7 @@ export default hopeTheme(
 
     iconAssets: "fontawesome-with-brands",
 
-        // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+        // logo: "",
     // TODO: add logo
 
     repo: "titieo016/notable",
@@ -38,7 +38,8 @@ export default hopeTheme(
 
         blog: {
         description: "A YDS-er that enjoy Programming 🧑‍💻 <br> & Gym 💪",
-          intro: "/intro.html",
+            intro: "/intro.html",
+          avatar: 'logo.jpg',
       medias: {
         Discord: "https://example.com",
         // Dribbble: "https://example.com",

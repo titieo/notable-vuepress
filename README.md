@@ -4,11 +4,10 @@ layout: BlogHome
 icon: home
 title: Notable
 # heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-bgImage: /bg.png
+bgImage: false
 # bgImageStyle: 'background-position-y: bottom'
-heroText: Notable
-tagline: Rule your mind or it will rule you
-heroImageStyle: 'opacity:70'
+heroText: false
+# tagline: Rule your mind or it will rule you
 # bgImageStyle: 'display:none'
 # heroFullScreen: true
 # projects:
