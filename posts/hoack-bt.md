@@ -8,8 +8,18 @@ tags: ['Hoá Y']
 # draft: true
 ---
 
-ĐÈ HÓA CUÓI KỲ Y2023 60 CÂU - 70 PHÚT
-Y23 thi trong phòng máy, thu giấy nháp nên không nhớ rõ đề nha :(
+## Lưu ý
+
+Liên kết Hidro của Guanine vs Cytosine (O nào LK H nào)
+
+Nhiệt động học (xem kĩ pretest, tính $\Delta H, \Delta G$)
+
+Học terpen, steroid, glucose, xác định liên kết $\alpha , \beta$ glycoside
+
+K+ máu tăng $\to$ ECG
+
+ASTT: 2Na+ + 10(BUN/28 + glu/180)
+## Câu hỏi
 
 1. Cho dung dịch gồm acid lactic 0,087M và lactat 0,01M có pH=4,8. Tính pKa của acid
 lactic.
