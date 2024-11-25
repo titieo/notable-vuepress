@@ -114,6 +114,7 @@ export default hopeTheme(
       // install katex or before enabling it
       markdownMath: {
           type: "mathjax", // or "mathjax"
+          output: "chtml",
       },
 
         markdownTab: true,

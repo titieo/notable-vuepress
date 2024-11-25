@@ -40,7 +40,7 @@ ngoại lệ halogen thì -I luôn mạnh hơn +R
 
 ### Phản ứng cộng
 
-Công ái điện tử/thân điện tử **A<sub>E</sub>**: Cộng vào **$\ce{ C=C }$**
+Cộng ái điện tử/thân điện tử **A<sub>E</sub>**: Cộng vào **$\ce{ C=C }$**
 
 * Quy tắc Markovnikov: Phản ứng cộng A<sub>E</sub> ưu tiên hướng hình thành carbocation bền
 

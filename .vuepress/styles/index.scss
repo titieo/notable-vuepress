@@ -5,21 +5,105 @@
 @use "vuepress-theme-hope/presets/round-blogger-avatar.scss";
 // @unocss;
 
-#main-content {
-    font-size: 1.1rem;
-    h1              { font-size: 2em }
-    h2              { font-size: 1.5em}
-    h3              { font-size: 1.17em; }
-    h5              { font-size: .83em; }
-    h6              { font-size: .75em;  }
+@font-face {
+        font-family: 'GrowingGarden';
+        src: url('/fonts/SVN-GrowingGarden-Regular.otf')
+            format('opentype');
+        font-weight: 400;
+        font-display: swap;
+    }
+
+    // @font-face {
+    //     font-family: 'GrowingGarden';
+    //     src: url('/fonts/SVN-GrowingGarden-Script.otf')
+    //         format('opentype');
+    //     font-weight: 400;
+    //     font-style: italic;
+    //     font-display: swap;
+    // }
+    // @font-face {
+    //     font-family: 'LumiosMarker';
+    //     src: url('/fonts/SVN-LumiosMarker.otf') format('opentype');
+    //     /* font-weight: 400; */
+    //     font-display: swap;
+    // }
+    // @font-face {
+    //     font-family: 'Tangerine';
+    //     src: url('/fonts/SVN-Tangerine HB.otf') format('opentype');
+    //     /* font-weight: 400; */
+    //     font-display: swap;
+    // }
+    // @font-face {
+    //     font-family: 'LazyFox';
+    //     src: url('/fonts/DFVN LazyFox.otf') format('opentype');
+    //     /* font-weight: 400; */
+    //     font-display: swap;
+    // }
+    @font-face {
+        font-family: 'Be Cool';
+        src: url('/fonts/SVN-Be Cool.otf') format('opentype');
+        /* font-weight: 400; */
+        font-weight: 300;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Chicken';
+        src: url('/fonts/SVN-Chicken Noodle Soup.otf') format('opentype');
+        /* font-weight: 400; */
+        font-weight: 300;
+        font-display: swap;
+    }
+
+.theme-hope-content{
+    @media screen and (min-width: 768px) {
+// *:not([class="markmap-wrapper"]) * {
+//   background: magenta;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+// }
+
+    }
+    font-family: Be Cool, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    h1              { font-size: 2.7em }
+    h2            { font-size: 2.3em}
+    h3            { font-size: 2em; }
+    thead {font-size:1.5em;
+    padding: .6rem 1rem
+    }
+    h5              { font-size: 1.17em; }
+    h6              { font-size: 1em;  }
 h1, h2, h3, h4,
-h5, h6          { font-weight: bolder }
+h5, h6, thead          { font-weight: bolder;
+    color: #efbf04;
+// font-family: GrowingGarden;
+font-family: Chicken, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+letter-spacing: 1px;
+ }
 
 table {
       margin-left: auto;
   margin-right: auto;
 }
+
+td {
+    font-size: 1.4rem
 }
+p {
+
+    // color: hsl(	0.60,	1.00,	0.83);
+    color: #D4E5FF;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+}
+
+#main-content .markmap-wrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
 .vp-blog-hero.no-bg {
     height: 3rem;
     opacity: 0;
