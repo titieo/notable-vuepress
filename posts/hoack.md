@@ -1,5 +1,5 @@
 ---
-title: 'Ôn Hoá Đại Cương Thi CK'
+title: 'Lí thuyết Hoá Đại Cương Thi CK'
 description: ''
 date: 2024-11-22
 excerpt: Thi CK 60 câu - 70 phút

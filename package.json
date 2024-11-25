@@ -29,7 +29,7 @@
   "scripts": {
     "build": "vuepress build .",
     "dev": "vuepress dev .",
-    "cz": "git add . && git-cz",
+    "cz": "git add . && git-cz && git push origin main",
     "release": "bump-version",
     "fix-lint": "run-script-os",
     "fix-lint:default": "(echo Attempting to fix lint... && markdownlint -c .markdownlint.json -p .markdownlintignore '**/*.md **/*.mdx' -f && echo Fixed successfully, please commit.) || (echo Fix failed! && exit 1)",
