@@ -4,41 +4,6 @@
 @use "vuepress-theme-hope/presets/left-blog-info";
 @use "vuepress-theme-hope/presets/round-blogger-avatar.scss";
 // @unocss;
-
-@font-face {
-        font-family: 'GrowingGarden';
-        src: url('/fonts/SVN-GrowingGarden-Regular.otf')
-            format('opentype');
-        font-weight: 400;
-        font-display: swap;
-    }
-
-    // @font-face {
-    //     font-family: 'GrowingGarden';
-    //     src: url('/fonts/SVN-GrowingGarden-Script.otf')
-    //         format('opentype');
-    //     font-weight: 400;
-    //     font-style: italic;
-    //     font-display: swap;
-    // }
-    // @font-face {
-    //     font-family: 'LumiosMarker';
-    //     src: url('/fonts/SVN-LumiosMarker.otf') format('opentype');
-    //     /* font-weight: 400; */
-    //     font-display: swap;
-    // }
-    // @font-face {
-    //     font-family: 'Tangerine';
-    //     src: url('/fonts/SVN-Tangerine HB.otf') format('opentype');
-    //     /* font-weight: 400; */
-    //     font-display: swap;
-    // }
-    // @font-face {
-    //     font-family: 'LazyFox';
-    //     src: url('/fonts/DFVN LazyFox.otf') format('opentype');
-    //     /* font-weight: 400; */
-    //     font-display: swap;
-    // }
     @font-face {
         font-family: 'Be Cool';
         src: url('/fonts/SVN-Be Cool.otf') format('opentype');
@@ -54,7 +19,8 @@
         font-display: swap;
     }
 
-.theme-hope-content{
+
+html[data-theme="dark"][notebook='true'] .theme-hope-content{
     @media screen and (min-width: 768px) {
 // *:not([class="markmap-wrapper"]) * {
 //   background: magenta;

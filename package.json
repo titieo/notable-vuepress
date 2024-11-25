@@ -1,20 +1,22 @@
 {
-    "husky": {
-  "hooks": {
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-  }
-},
-"config": {
-  "commitizen": {
-    "path": "./node_modules/cz-customizable"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
-  "cz-customizable": {
-    "config": "./node_modules/@picgo/bump-version/.cz-config.js"
-  }
-},
-"commitlint": {
-  "extends": ["./node_modules/@picgo/bump-version/commitlint-picgo"]
-},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./node_modules/@picgo/bump-version/.cz-config.js"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/@picgo/bump-version/commitlint-picgo"
+    ]
+  },
   "name": "notable",
   "private": true,
   "type": "module",
@@ -52,6 +54,7 @@
     "@vuepress/bundler-vite": "2.0.0-rc.17",
     "@vuepress/helper": "2.0.0-rc.52",
     "commitizen": "^4.3.1",
+    "commitlint": "^19.6.0",
     "cz-customizable": "^7.2.1",
     "husky": "^9.1.7",
     "katex": "^0.16.11",
