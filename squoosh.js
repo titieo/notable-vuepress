@@ -1,14 +1,14 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const { ImagePool } = require('@squoosh/lib');
+import { ImagePool } from '@squoosh/lib';
 const imagePool = new ImagePool();
 
 // Define your paths:
-const imagesToOptimizePath = './src/images/';
+const imagesToOptimizePath = './images/';
 // const moveToPath =
 //     './_originalRawImages/'; /* Uncomment this if you want to keep files */
-const optimizeToPath = './public/';
+const optimizeToPath = './.vuepress/public/';
 
 (async () => {
     const files = await fs.promises.readdir(imagesToOptimizePath);

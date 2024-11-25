@@ -1,8 +1,9 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
-import UnoCSS from 'unocss/vite'
+// import UnoCSS from 'unocss/vite'
 
+import viteImagemin from 'vite-plugin-imagemin'
 import theme from "./theme.js";
 import { comment } from "vuepress-theme-hope";
 import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
@@ -19,11 +20,11 @@ export default defineUserConfig({
     //   bundler: viteBundler(),
 
   bundler: viteBundler({
-    // viteOptions: {
-    //         plugins: [
-    //         UnoCSS(),
-    //         ]
-    //     },
+    viteOptions: {
+            plugins: [
+            viteImagemin(),
+            ]
+        },
   }),
 
     theme,

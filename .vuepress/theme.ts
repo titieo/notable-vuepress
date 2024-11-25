@@ -99,7 +99,18 @@ export default hopeTheme(
       // },
 
       components: {
-        components: ["Badge", "VPCard"],
+          components: ["Badge", "VPCard", "PDF",'Share'],
+          componentOptions: {
+
+              share: {
+
+                //   colorful: true,
+                  services: ['email', 'facebook', 'messenger', 'telegram'],
+                  colorful: true,
+                  inline: true,
+              }
+          }
+        //   componentsOptions: {},
         },
         searchPro: {
           autoSuggestions: false
@@ -123,6 +134,17 @@ export default hopeTheme(
         comment: {
             provider: "Giscus",
             // repo: 'notable', repoId: '', category: '',categoryId:''
+                    repo:"titieo/notable",
+    repoId:"R_kgDONUFZ3A",
+        category:"Q&A",
+        categoryId:"DIC_kwDONUFZ3M4CklO9",
+            mapping: "title",
+            lightTheme: 'light_protanopia',
+        darkTheme: 'dark_protanopia',
+       // data-strict:"0",
+        // data-emit-metadata:"1",
+        // inputPosition:"bottom"
+        // lang:"en",
         },
 
 
