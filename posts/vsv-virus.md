@@ -4,7 +4,7 @@ description: ''
 # pubDate: 'Nov 19 2024'
 date: 2024-11-19
 heroImage: '/blog-placeholder-3.jpg'
-tags: ['Hoá Sinh']
+tags: ['Vi Sinh']
 ---
 
 ## Giới thiệu
