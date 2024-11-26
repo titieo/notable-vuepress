@@ -14,253 +14,257 @@ export default hopeTheme(
         displayFooter: true,
 
         blogLocales: {
-          tutorial: "Tutorial",
+            tutorial: "Tutorial",
         },
 
         metaLocales: {
-          editLink: "Edit this page on GitHub",
+            editLink: "Edit this page on GitHub",
         },
 
-    hostname: "https://titieo016.github.io/notable",
+        hostname: "https://loctran016.github.io/notable",
 
-    author: {
-      name: "LocTran016",
-    //   url: "https://your.domain",
-    },
+        author: {
+            name: "LocTran016",
+            //   url: "https://your.domain",
+        },
 
-    iconAssets: "fontawesome-with-brands",
+        favicon: "/favicon.ico",
+
+        iconAssets: "fontawesome-with-brands",
 
         // logo: "",
-    // TODO: add logo
+        // TODO: add logo
 
-    repo: "titieo016/notable",
-    // docsDir: "blog",
+        repo: "loctran016/notable",
+        // docsDir: "blog",
 
         blog: {
-        description: "A YDS-er that enjoy Programming 🧑‍💻 <br> & Gym 💪",
+            description: "A YDS-er that enjoy Programming 🧑‍💻 <br> & Gym 💪",
             intro: "/intro.html",
-          avatar: 'logo.jpg',
-      medias: {
-        Discord: "https://example.com",
-        // Dribbble: "https://example.com",
-        Email: "mailto:ttloc.y24@ump.edu.vn",
-        // Evernote: "https://example.com",
-        Facebook: "https://facebook.com/trantanloc016",
-        // Flipboard: "https://example.com",
-        GitHub: "https://github.com/titieo016",
-        // Gitlab: "https://example.com",
-        // Gmail: "mailto:info@example.com",
-        // Instagram: "https://example.com",
-        // Linkedin: "https://example.com",
+            avatar: 'logo.jpg',
+            medias: {
+                Discord: "https://example.com",
+                // Dribbble: "https://example.com",
+                Email: "mailto:ttloc.y24@ump.edu.vn",
+                // Evernote: "https://example.com",
+                Facebook: "https://facebook.com/trantanloc016",
+                // Flipboard: "https://example.com",
+                GitHub: "https://github.com/loctran016",
+                // Gitlab: "https://example.com",
+                // Gmail: "mailto:info@example.com",
+                // Instagram: "https://example.com",
+                // Linkedin: "https://example.com",
 
-        // Pocket: "https://example.com",
-        // Rss: "https://example.com",
-        // Steam: "https://example.com",
-        // VuePressThemeHope: {
-        //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        //   link: "https://theme-hope.vuejs.press",
-        // },
-      },
+                // Pocket: "https://example.com",
+                // Rss: "https://example.com",
+                // Steam: "https://example.com",
+                // VuePressThemeHope: {
+                //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+                //   link: "https://theme-hope.vuejs.press",
+                // },
+            },
         },
 
 
-// fullscreen: true,
+        // fullscreen: true,
 
-    encrypt: {
-      config: {
-        // "/demo/encrypt.html": ["1234"],
-        // "/zh/demo/encrypt.html": ["1234"],
-      },
+        encrypt: {
+            config: {
+                // "/demo/encrypt.html": ["1234"],
+                // "/zh/demo/encrypt.html": ["1234"],
+            },
+        },
+
+        // enable it to preview all changes in time
+        // hotReload: true,
+
+        plugins: {
+            blog: {
+                excerptLength: 0,
+                type: [
+                    //   {
+                    //     key: "tutorial",
+                    //     filter: (page): boolean =>
+                    //       Boolean(page.filePathRelative?.includes("demo/")),
+                    //     sorter: (pageA, pageB): number =>
+                    //       dateSorter(pageA.frontmatter.date, pageB.frontmatter.date),
+                    //     layout: "BlogType",
+                    //   },
+                ],
+            },
+
+            // install @waline/client before enabling it
+            // WARNING: This is a test server for demo only.
+            // You should create and use your own comment service in production.
+            // comment: {
+            //   provider: "Waline",
+            //   serverURL: "https://waline-comment.vuejs.press",
+            // },
+
+            components: {
+                components: ["Badge", "VPCard", "PDF", 'Share'],
+                componentOptions: {
+
+                    share: {
+
+                        //   colorful: true,
+                        services: ['email', 'facebook', 'messenger', 'telegram'],
+                        colorful: true,
+                        inline: true,
+                    }
+                }
+                //   componentsOptions: {},
+            },
+            searchPro: {
+                autoSuggestions: false
+            },
+
+            markdownImage: {
+                figure: true,
+                lazyload: true,
+                size: true,
+            },
+
+            // install katex or before enabling it
+            markdownMath: {
+                type: "mathjax", // or "mathjax"
+                output: "chtml",
+            },
+
+            markdownTab: true,
+
+            // markdownMath: true,
+            comment: {
+                provider: "Giscus",
+                // repo: 'notable', repoId: '', category: '',categoryId:''
+                repo: "loctran016/notable",
+                repoId: "R_kgDONUFZ3A",
+                category: "Q&A",
+                categoryId: "DIC_kwDONUFZ3M4CklO9",
+                mapping: "title",
+                lightTheme: 'light_protanopia',
+                darkTheme: 'dark_protanopia',
+                // data-strict:"0",
+                // data-emit-metadata:"1",
+                // inputPosition:"bottom"
+                // lang:"en",
+            },
+
+
+            // All features are enabled for demo, only preserve features you need here
+            mdEnhance: {
+                align: true,
+                attrs: true,
+                component: true,
+                mark: true,
+                spoiler: true,
+                markmap: true,
+                // stylize: [
+                //   {
+                //     matcher: "Recommended",
+                //     replacer: ({ tag }) => {
+                //       if (tag === "em")
+                //         return {
+                //           tag: "Badge",
+                //           attrs: { type: "tip" },
+                //           content: "Recommended",
+                //         };
+                //     },
+                //   },
+                // ],
+                // TODO: Check back on this later
+                sub: true,
+                sup: true,
+                tasklist: true,
+                // vPre: true,
+
+                // install chart.js before enabling it
+                // chart: true,
+
+                // insert component easily
+
+                // install echarts before enabling it
+                // echarts: true,
+
+                // install flowchart.ts before enabling it
+                // flowchart: true,
+
+                // gfm requires mathjax-full to provide tex support
+                // gfm: true,
+
+                // install mermaid before enabling it
+                // mermaid: true,
+
+                // playground: {
+                //   presets: ["ts", "vue"],
+                // },
+
+                // install @vue/repl before enabling it
+                // vuePlayground: true,
+            },
+
+            // uncomment these if you want a PWA
+            pwa: {
+                favicon: "/favicon.ico",
+                cacheHTML: true,
+                cacheImage: true,
+                appendBase: true,
+                apple: {
+                    icon: "/assets/apple-touch-icon.png",
+                    statusBarColor: "black",
+                },
+                // msTile: {
+                //   image: "/assets/ms-icon-144.png",
+                //   color: "#ffffff",
+                // },
+                manifest: {
+                    icons: [
+                        {
+                            src: "/assets/web-app-manifest-512.png",
+                            sizes: "512x512",
+                            purpose: "maskable",
+                            type: "image/png",
+                        },
+                        {
+                            src: "/assets/web-app-manifest-192x192.png",
+                            sizes: "192x192",
+                            purpose: "maskable",
+                            type: "image/png",
+                        },
+                        // {
+                        //   src: "/assets/icon/chrome-512.png",
+                        //   sizes: "512x512",
+                        //   type: "image/png",
+                        // },
+                        // {
+                        //   src: "/assets/icon/chrome-192.png",
+                        //   sizes: "192x192",
+                        //   type: "image/png",
+                        // },
+                    ],
+                    //   shortcuts: [
+                    //     {
+                    //       name: "Demo",
+                    //       short_name: "Demo",
+                    //       url: "/demo/",
+                    //       icons: [
+                    //         {
+                    //           src: "/assets/icon/guide-maskable.png",
+                    //           sizes: "192x192",
+                    //           purpose: "maskable",
+                    //           type: "image/png",
+                    //         },
+                    //       ],
+                    //     },
+                    //   ],
+                },
+
+                // install @vuepress/plugin-revealjs before enabling it
+                // revealjs: {
+                //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+                // },
+            },
+        },
     },
-
-    // enable it to preview all changes in time
-    // hotReload: true,
-
-    plugins: {
-      blog: {excerptLength:0,
-        type: [
-        //   {
-        //     key: "tutorial",
-        //     filter: (page): boolean =>
-        //       Boolean(page.filePathRelative?.includes("demo/")),
-        //     sorter: (pageA, pageB): number =>
-        //       dateSorter(pageA.frontmatter.date, pageB.frontmatter.date),
-        //     layout: "BlogType",
-        //   },
-        ],
-      },
-
-      // install @waline/client before enabling it
-      // WARNING: This is a test server for demo only.
-      // You should create and use your own comment service in production.
-      // comment: {
-      //   provider: "Waline",
-      //   serverURL: "https://waline-comment.vuejs.press",
-      // },
-
-      components: {
-          components: ["Badge", "VPCard", "PDF",'Share'],
-          componentOptions: {
-
-              share: {
-
-                //   colorful: true,
-                  services: ['email', 'facebook', 'messenger', 'telegram'],
-                  colorful: true,
-                  inline: true,
-              }
-          }
-        //   componentsOptions: {},
-        },
-        searchPro: {
-          autoSuggestions: false
-      },
-
-      markdownImage: {
-        figure: true,
-        lazyload: true,
-        size: true,
-      },
-
-      // install katex or before enabling it
-      markdownMath: {
-          type: "mathjax", // or "mathjax"
-          output: "chtml",
-      },
-
-        markdownTab: true,
-
-        // markdownMath: true,
-        comment: {
-            provider: "Giscus",
-            // repo: 'notable', repoId: '', category: '',categoryId:''
-                    repo:"titieo/notable",
-    repoId:"R_kgDONUFZ3A",
-        category:"Q&A",
-        categoryId:"DIC_kwDONUFZ3M4CklO9",
-            mapping: "title",
-            lightTheme: 'light_protanopia',
-        darkTheme: 'dark_protanopia',
-       // data-strict:"0",
-        // data-emit-metadata:"1",
-        // inputPosition:"bottom"
-        // lang:"en",
-        },
-
-
-      // All features are enabled for demo, only preserve features you need here
-      mdEnhance: {
-        align: true,
-        attrs: true,
-        component: true,
-        mark: true,
-        spoiler: true,
-        markmap: true,
-        // stylize: [
-        //   {
-        //     matcher: "Recommended",
-        //     replacer: ({ tag }) => {
-        //       if (tag === "em")
-        //         return {
-        //           tag: "Badge",
-        //           attrs: { type: "tip" },
-        //           content: "Recommended",
-        //         };
-        //     },
-        //   },
-          // ],
-        // TODO: Check back on this later
-        sub: true,
-        sup: true,
-        tasklist: true,
-        // vPre: true,
-
-        // install chart.js before enabling it
-        // chart: true,
-
-        // insert component easily
-
-        // install echarts before enabling it
-        // echarts: true,
-
-        // install flowchart.ts before enabling it
-        // flowchart: true,
-
-        // gfm requires mathjax-full to provide tex support
-        // gfm: true,
-
-        // install mermaid before enabling it
-        // mermaid: true,
-
-        // playground: {
-        //   presets: ["ts", "vue"],
-        // },
-
-        // install @vue/repl before enabling it
-        // vuePlayground: true,
-      },
-
-      // uncomment these if you want a PWA
-      // pwa: {
-      //   favicon: "/favicon.ico",
-      //   cacheHTML: true,
-      //   cacheImage: true,
-      //   appendBase: true,
-      //   apple: {
-      //     icon: "/assets/icon/apple-icon-152.png",
-      //     statusBarColor: "black",
-      //   },
-      //   msTile: {
-      //     image: "/assets/icon/ms-icon-144.png",
-      //     color: "#ffffff",
-      //   },
-      //   manifest: {
-      //     icons: [
-      //       {
-      //         src: "/assets/icon/chrome-mask-512.png",
-      //         sizes: "512x512",
-      //         purpose: "maskable",
-      //         type: "image/png",
-      //       },
-      //       {
-      //         src: "/assets/icon/chrome-mask-192.png",
-      //         sizes: "192x192",
-      //         purpose: "maskable",
-      //         type: "image/png",
-      //       },
-      //       {
-      //         src: "/assets/icon/chrome-512.png",
-      //         sizes: "512x512",
-      //         type: "image/png",
-      //       },
-      //       {
-      //         src: "/assets/icon/chrome-192.png",
-      //         sizes: "192x192",
-      //         type: "image/png",
-      //       },
-      //     ],
-      //     shortcuts: [
-      //       {
-      //         name: "Demo",
-      //         short_name: "Demo",
-      //         url: "/demo/",
-      //         icons: [
-      //           {
-      //             src: "/assets/icon/guide-maskable.png",
-      //             sizes: "192x192",
-      //             purpose: "maskable",
-      //             type: "image/png",
-      //           },
-      //         ],
-      //       },
-      //     ],
-      //   },
-
-      // install @vuepress/plugin-revealjs before enabling it
-      // revealjs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-    },
-  },
   { custom: true },
 );
