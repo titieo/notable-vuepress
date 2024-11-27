@@ -144,10 +144,6 @@ export default hopeTheme(
                 mapping: "title",
                 lightTheme: 'light_protanopia',
                 darkTheme: 'dark_protanopia',
-                // data-strict:"0",
-                // data-emit-metadata:"1",
-                // inputPosition:"bottom"
-                // lang:"en",
             },
 
 
